@@ -1,0 +1,29 @@
+.ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    align-items: end;
+}
+
+.selectable-table {
+    width: 100%;
+    td {
+        padding: 0;
+
+        .active, .inactive {
+            width: 100%;
+            border: none;
+        }
+    }
+}
+
+
+.inactive:hover {
+    background-color: #0dbbf0;
+}
+
+.active {
+    background-color: #0dcaf0;
+}
