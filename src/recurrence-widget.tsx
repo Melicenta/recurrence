@@ -22,6 +22,7 @@ import {initialRrule,
 } from "./recurrenceSlice";
 import './recurrence-widget.scss'
 import {
+    convertCustomDateToDate, convertDateToCustomTimeString,
     convertFromStringToDateString,
     convertISOStringToString,
     getRecurrenceAndRDate
@@ -824,7 +825,9 @@ export const RecurrenceWidget = ({recurrenceState, onSubmit}:Props) => {
                                         Current:
                                     </td>
                                     <td key={'cur_date_val'}>
-                                        <Form.Label className="ms-1 mt-1 text-info"> {formState?.RDATE
+                                        <Form.Label className="ms-1 mt-1 text-info"> { (formState?.RDATE && formState?.RDATE.includes('T')
+                                            ? formState?.RDATE.split('T')[0]
+                                            : formState?.RDATE)
                                         || 'Choose required date'}</Form.Label>
                                     </td>
                                 </tr>
