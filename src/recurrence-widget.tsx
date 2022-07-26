@@ -925,7 +925,7 @@ export const RecurrenceWidget = ({recurrenceState, onSubmit}:Props) => {
                 </div>
             <Row>
                 <Col>
-                    <Alert variant="success" className="mt-3 mb-5">
+                    <Alert variant="success" className="mt-3 mb-5 overflow-a">
                         <Alert.Heading>Result recurrence string</Alert.Heading>
                         <hr />
                         {!formState.default &&<>

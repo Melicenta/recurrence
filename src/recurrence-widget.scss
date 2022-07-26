@@ -5,6 +5,23 @@
     padding: 0;
     list-style: none;
     align-items: end;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.ul li{
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+}
+
+.form-check {
+    @media screen and (max-width: 1024px) {
+        padding: 2em;
+    }
 }
 
 .selectable-table {
@@ -19,6 +36,12 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .overflow-a {
+        overflow: auto;
+    }
+
+}
 
 .inactive:hover {
     background-color: #0dbbf0;

@@ -40,7 +40,7 @@ function App() {
                       </Col>
                   </Row>
                   <Row>
-                      <Col md={'6'} className={'text-center'}>
+                      <Col md={'6'} className={'text-center overflow-a'}>
                           <p>You have submitted: {formState.recurrence} </p>
                       </Col>
                   </Row>
